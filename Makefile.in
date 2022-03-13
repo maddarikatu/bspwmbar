@@ -33,7 +33,7 @@ config: config.def.h
 .PHONY: config
 
 clean:
-	rm -f bspwmar $(OBJ)
+	rm -f bspwmbar $(OBJ)
 .PHONY: clean
 
 run: bspwmbar
