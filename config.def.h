@@ -82,26 +82,14 @@ module_t right_modules[] = {
 			.prefix = "mem: "
 		},
 	},
-	// { /* battery */
-	// 	.battery = {
-	// 		.func = battery,
-	// 		.prefix = " ",
-	// 		.prefix_1 = " ",
-	// 		.prefix_2 = " ",
-	// 		.prefix_3 = " ",
-	// 		.prefix_4 = " ",
-	// 		.suffix = "％",
-	// 		.path = "/sys/class/power_supply/BAT0/uevent",
-	// 	},
-	// },
-	// { /* backlight */
-	// 	.backlight = {
-	// 		.func = backlight,
-	// 		.handler = backlight_ev,
-	// 		.prefix = "盛 ",
-	// 		.suffix = "％",
-	// 	},
-	// },
+	{ /* backlight */
+		.backlight = {
+			.func = backlight,
+			.handler = backlight_ev,
+			.prefix = "盛 ",
+			.suffix = "％",
+		},
+	},
 	{ /* master playback volume */
 		.vol = {
 			.func = volume,
@@ -109,6 +97,14 @@ module_t right_modules[] = {
 			.suffix = "％",
 			.muted = "婢",
 			.unmuted = "墳",
+		},
+	},
+	{ /* backlight */
+		.backlight = {
+			.func = backlight,
+			.handler = backlight_ev,
+			.prefix = "盛 ",
+			.suffix = "％",
 		},
 	},
 	{ /* used space of root file system */
@@ -125,6 +121,18 @@ module_t right_modules[] = {
 			.sensor = THERMAL_PATH,
 			.prefix = " ",
 			.suffix = "℃",
+		},
+	},
+	{ /* battery */
+		.battery = {
+			.func = battery,
+			.prefix = " ",
+			.prefix_1 = " ",
+			.prefix_2 = " ",
+			.prefix_3 = " ",
+			.prefix_4 = " ",
+			.suffix = "％",
+			.path = "/sys/class/power_supply/BAT0/uevent",
 		},
 	},
 	{ /* clock */

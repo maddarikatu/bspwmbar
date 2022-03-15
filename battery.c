@@ -108,10 +108,10 @@ battery_parse_key(const char *str)
 	if (!strncmp("POWER_SUPPLY_STATUS", str, strlen(str)))
 		return BAT_KEY_STATUS;
 
-	if (!strncmp("POWER_SUPPLY_CHARGE_NOW", str, strlen(str)))
+	if (!strncmp("POWER_SUPPLY_ENERGY_NOW", str, strlen(str)))
 		return BAT_KEY_SUPPLY_CHARGE_NOW;
 
-	if (!strncmp("POWER_SUPPLY_CHARGE_FULL", str, strlen(str)))
+	if (!strncmp("POWER_SUPPLY_ENERGY_FULL", str, strlen(str)))
 		return BAT_KEY_SUPPLY_CHARGE_FULL;
 
 	return BAT_KEY_UNKNOWN;
