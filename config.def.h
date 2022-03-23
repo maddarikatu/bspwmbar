@@ -41,8 +41,8 @@ module_t left_modules[] = {
 	{ /* Arch logo */
 		.text = {
 			.func = text,
-			.label = "",
-			.fg = "#1793d1",
+			.label = "",
+			.fg = "#abc2ab",
 		},
 	},
 	{ /* bspwm desktop state */
@@ -97,14 +97,6 @@ module_t right_modules[] = {
 			.suffix = "％",
 			.muted = "婢",
 			.unmuted = "墳",
-		},
-	},
-	{ /* backlight */
-		.backlight = {
-			.func = backlight,
-			.handler = backlight_ev,
-			.prefix = "盛 ",
-			.suffix = "％",
 		},
 	},
 	{ /* used space of root file system */
