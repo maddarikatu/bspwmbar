@@ -41,8 +41,8 @@ module_t left_modules[] = {
 	{ /* Arch logo */
 		.text = {
 			.func = text,
-			.label = "",
-			.fg = "#abc2ab",
+			.label = "",
+			.fg = "#1793d1",
 		},
 	},
 	{ /* bspwm desktop state */
