@@ -15,10 +15,10 @@
 /* max length of active window title */
 #define TITLE_MAXSZ 50
 /* set window height */
-#define BAR_HEIGHT  36
+#define BAR_HEIGHT  30
 
 /* set font pattern for find fonts, see fonts-conf(5) */
-const char *fontname = "sans-serif:size=14";
+const char *fontname = "sans-serif:size=12";
 
 /*
  * color settings by index of color map
